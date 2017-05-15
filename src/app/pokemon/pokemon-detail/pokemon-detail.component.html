@@ -1,0 +1,80 @@
+<div id="pokemon-details" class="pokemon-details">
+  <div class="container">
+    <div class="col-md-3 img-ctnr">
+      <span class="img-detail">
+        <img src="{{ currentPokemon && 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + currentPokemon.id + '.png'}}">
+      </span>
+    </div>
+    <div class="col-md-9">
+      <hr/>
+      <p>This pokemon name is {{currentPokemon?.name}}, his base experienceis {{currentPokemon?.base_experience }} and his abilities
+        are: {{getAbilities(currentPokemon?.abilities )}}.</p>
+      <hr/>
+      <div class="row">
+        <div class="col-md-6">
+          <p><b>Altura: </b>{{currentPokemon?.height}} </p>
+          <p><b>Peso: </b>{{currentPokemon?.weight}} kg</p>
+          <p><b>Sexo: </b>Masculino - Femenino</p>
+        </div>
+        <div class="col-md-6">
+          <p><b>Categoría: </b>Semilla</p>
+          <p><b>Habilidad: </b>{{getAbilities(currentPokemon?.abilities )}}</p>
+          <p><b>Debilidad: </b>Fuego</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="col-sm-4">
+        <h2 class="pokemon-h2">Altura</h2>
+        <div class="c100 p{{currentPokemon?.height}} small center">
+          <span>{{currentPokemon?.height}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h2 class="pokemon-h2">Defensa</h2>
+        <div class="c100 p{{currentPokemon?.stats[3].base_stat}} small green center">
+          <span>{{currentPokemon?.stats[3].base_stat}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h2 class="pokemon-h2">Velocidad</h2>
+        <div class="c100 p{{currentPokemon?.stats[0].base_stat}} small green center">
+
+          <span>{{currentPokemon?.stats[0].base_stat}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h2 class="pokemon-h2">Ataque Especial</h2>
+        <div class="c100 p{{currentPokemon?.stats[2].base_stat}} small orange center">
+          <span>{{currentPokemon?.stats[2].base_stat}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h2 class="pokemon-h2">Defensa Especial</h2>
+        <div class="c100 p{{currentPokemon?.stats[1].base_stat}} small center">
+          <span>{{currentPokemon?.stats[1].base_stat}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

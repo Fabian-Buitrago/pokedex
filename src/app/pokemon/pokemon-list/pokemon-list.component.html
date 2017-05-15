@@ -1,0 +1,9 @@
+<div class="col-sm-6 col-md-3" *ngFor="let p of pokemon | search : GetPokemonToTheSearch()">
+  <pokemon-row [currentPokemon]="p"></pokemon-row>
+</div>
+
+<div class="col-sm-12 text-center" [hidden]="spinnerStatus">
+  <img class="pokemon-load" src="/assets/images/simple_pokeball.gif">
+</div>
+
+<router-outlet></router-outlet>

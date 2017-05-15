@@ -1,0 +1,6 @@
+<div class="input-group input-group-lg">
+  <input #input type="text" class="form-control" placeholder="Search for..." (keydown)="keyDown($event, input.value)">
+  <span class="input-group-btn">
+    <button id="search_pokemon_btn" class="btn btn-secondary" type="button" (click)="search(input.value)">Go!</button>
+  </span>
+</div>

@@ -1,0 +1,4 @@
+<a class="btn btn-default pokemon-box" [routerLink]="['./', currentPokemon.url | shortUrl]">
+    <img class="img-responsive center-block" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ currentPokemon.url | shortUrl }}.png">
+    <p class="default" [style.background-color]=" currentPokemon.name | color">{{currentPokemon.name}}</p>
+</a>

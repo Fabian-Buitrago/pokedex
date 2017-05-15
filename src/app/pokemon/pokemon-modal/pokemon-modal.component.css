@@ -1,0 +1,22 @@
+.spinner-pokemon{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    display: flex; /* add */
+    justify-content: center; /* add to align horizontal */
+    align-items: center; /* add to align vertical */
+}
+
+.modal, .spinner-pokemon{
+    background: rgba(0,0,0,.9);
+}
+
+[hidden], template {
+    display: none !important;
+}

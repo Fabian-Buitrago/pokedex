@@ -1,0 +1,35 @@
+.btn{
+    display:block;
+    margin-bottom:25px;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    border:2px solid #7EABA6;
+    padding:0
+}
+
+
+.btn p{
+    margin:0!important;
+    color:#fff;
+    padding:10px 0;
+    font-size:18px
+}
+
+.btn:hover{
+    background-color:#fff;
+    border:2px solid #1B356A
+}
+
+.pokemon-box{
+  border-radius: 11px;
+}
+
+.pokemon-box > p{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.default{
+    background-color: #8c868c;
+}
